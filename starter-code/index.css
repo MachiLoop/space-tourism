@@ -89,44 +89,56 @@ section#explore {
 /* SECTION MEDIA QUERY */
 /* SECTION MEDIA QUERY */
 @media (min-width: 648px) {
-    .container {
-      background-image: url(assets/home/background-home-tablet.jpg);
-    }
-  
-    header {
-      padding-inline-end: 0px;
-      padding-block: 0px;
-    }
-  
-    .harmburger {
-      display: none;
-    }
-  
-    nav {
-      display: block;
-      padding-inline: 28px 40px;
-      background-color: hsla(0, 0%, 100%, 0.1);
-    }
-  
-    nav ul {
-      display: flex;
-      gap: 32px;
-      padding-block: 28px;
-    }
-  
-    nav ul li a {
-      color: hsla(0, 0%, 100%, 0.9);
-      padding-block-end: 28px;
-      font-family: "Barlow Condensed", sans-serif;
-      text-transform: uppercase;
-    }
-  
-    nav ul li a span {
-      display: none;
-    }
-  
-    nav ul li a:hover {
-      border-bottom: 2px solid hsl(0, 0%, 100%);
-    }
-   
-  }  
+  .container {
+    background-image: url(assets/home/background-home-tablet.jpg);
+  }
+
+  header {
+    padding-inline-end: 0px;
+    padding-block: 0px;
+  }
+
+  .harmburger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    padding-inline: 28px 40px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+  }
+
+  nav ul {
+    display: flex;
+    gap: 32px;
+    padding-block: 28px;
+  }
+
+  nav ul li a {
+    color: hsla(0, 0%, 100%, 0.9);
+    padding-block-end: 28px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+  }
+
+  nav ul li a span {
+    display: none;
+  }
+
+  nav ul li a:hover {
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+  }
+
+  section#explore {
+    padding-inline: 0px;
+    width: 65%;
+    max-width: 600px;
+    margin-inline: auto;
+    margin-block-start: 70px;
+  }
+
+  #explore .explore-text p:nth-child(2) {
+    font-size: 150px;
+    margin-block: 0px;
+  }
+}
