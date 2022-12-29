@@ -33,3 +33,59 @@ header {
 nav {
   display: none;
 }
+
+/* EXPLORE SECTION */
+section#explore {
+  margin-block-start: 40px;
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+#explore .explore-text p {
+  text-align: center;
+}
+
+#explore .explore-text p:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 28px;
+  word-spacing: 4.75px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: hsl(231, 77%, 90%);
+}
+
+#explore .explore-text p:nth-child(2) {
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  font-size: 100px;
+  margin-block: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+#explore .explore-text p:nth-child(3) {
+  font-family: "Barlow Condensed", sans-serif;
+  word-spacing: 2.7px;
+  font-size: 18px;
+  color: hsl(230, 35%, 90%);
+  line-height: 28px;
+}
+
+#explore .explore-button {
+  text-align: center;
+}
+
+#explore .explore-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  width: 160px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  font-size: 26px;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  color: hsl(230, 35%, 7%);
+  background-color: hsl(0, 0%, 100%);
+}
