@@ -153,4 +153,26 @@ section#explore {
     display: inline;
     margin-right: 10px;
   }
+
+  section#explore {
+    width: 85%;
+    max-width: 1150px;
+    flex-direction: row;
+    gap: initial;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-block-start: 180px;
+  }
+
+  .explore-text {
+    max-width: 400px;
+  }
+
+  #explore .explore-text p {
+    text-align: left;
+  }
+
+  #explore .explore-button {
+    padding-bottom: 28px;
+  }
 }
