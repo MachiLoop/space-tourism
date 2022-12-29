@@ -142,3 +142,15 @@ section#explore {
     margin-block: 0px;
   }
 }
+
+@media (min-width: 1100px) {
+  .container {
+    background-image: url(assets/home/background-home-desktop.jpg);
+    background-size: 100vw 100%;
+  }
+
+  nav ul li a span {
+    display: inline;
+    margin-right: 10px;
+  }
+}
