@@ -71,10 +71,6 @@ section#explore {
   line-height: 28px;
 }
 
-#explore .explore-button {
-  text-align: center;
-}
-
 #explore .explore-button a {
   display: flex;
   align-items: center;
@@ -89,3 +85,48 @@ section#explore {
   color: hsl(230, 35%, 7%);
   background-color: hsl(0, 0%, 100%);
 }
+
+/* SECTION MEDIA QUERY */
+/* SECTION MEDIA QUERY */
+@media (min-width: 648px) {
+    .container {
+      background-image: url(assets/home/background-home-tablet.jpg);
+    }
+  
+    header {
+      padding-inline-end: 0px;
+      padding-block: 0px;
+    }
+  
+    .harmburger {
+      display: none;
+    }
+  
+    nav {
+      display: block;
+      padding-inline: 28px 40px;
+      background-color: hsla(0, 0%, 100%, 0.1);
+    }
+  
+    nav ul {
+      display: flex;
+      gap: 32px;
+      padding-block: 28px;
+    }
+  
+    nav ul li a {
+      color: hsla(0, 0%, 100%, 0.9);
+      padding-block-end: 28px;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+    }
+  
+    nav ul li a span {
+      display: none;
+    }
+  
+    nav ul li a:hover {
+      border-bottom: 2px solid hsl(0, 0%, 100%);
+    }
+   
+  }  
