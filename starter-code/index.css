@@ -149,9 +149,27 @@ section#explore {
     background-size: 100vw 100%;
   }
 
+  header {
+    padding-inline-start: 52px;
+    padding-block-start: 26px;
+  }
+
+  nav {
+    padding-inline: 96px 150px;
+  }
+
+  nav ul {
+    gap: 48px;
+  }
+
+  nav ul li a {
+    letter-spacing: 2.7px;
+  }
+
   nav ul li a span {
     display: inline;
     margin-right: 10px;
+    font-weight: bold;
   }
 
   section#explore {
