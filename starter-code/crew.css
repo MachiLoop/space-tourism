@@ -44,7 +44,7 @@ a {
 
 #crew h1 span {
   margin-right: 16px;
-  opacity: 0.2;
+  opacity: 0.4;
   font-weight: bold;
 }
 
@@ -119,6 +119,10 @@ a {
     background-image: url(assets/crew/background-crew-tablet.jpg);
   }
 
+  #crew {
+    margin-top: 40px;
+  }
+
   #crew h1 {
     text-align: initial;
   }
@@ -136,12 +140,78 @@ a {
     padding-top: 0px;
   }
 
-  #crew .crew-slider-button {
+  #crew .profile-secondary .crew-slider-button {
     order: 1;
     margin-block: 22px;
   }
 
   #crew .crew-description {
-    margin-block-start: 0px;
+    margin-block-start: 16px;
+  }
+
+  #crew .crew-description p {
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+  }
+
+  #crew h1,
+  #crew h2,
+  #crew h3,
+  #crew p {
+    text-align: initial;
+  }
+
+  #crew {
+    padding-inline: 0;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 50px;
+  }
+
+  #crew .crew-profile {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #crew .crew-image {
+    margin-inline: 0px;
+  }
+
+  #crew .crew-image img {
+    width: 360px;
+    /* height: 500px; */
+  }
+
+  #crew .crew-description h2 {
+    font-size: 28px;
+  }
+
+  #crew .crew-description h3 {
+    font-size: 56px;
+    margin-block: 12px 24px;
+  }
+
+  #crew .crew-description p {
+    font-size: 20px;
+    max-width: 400px;
+    margin-inline: 0;
+    line-height: 32px;
+  }
+
+  #crew .profile-secondary .crew-slider-button {
+    margin-block: 76px 0px;
+    margin-inline: 0;
+  }
+
+  #crew .profile-secondary .crew-slider-button span {
+    height: 12px;
+    border-radius: 50%;
+    margin-inline: 0px 16px;
   }
 }
