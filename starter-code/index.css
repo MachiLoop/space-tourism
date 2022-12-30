@@ -152,6 +152,16 @@ section#explore {
   header {
     padding-inline-start: 52px;
     padding-block-start: 26px;
+    position: relative;
+  }
+
+  header .nav-line {
+    width: calc(100% - 900px);
+    height: 1px;
+    position: absolute;
+    left: 160px;
+    background-color: hsl(0, 0%, 100%);
+    opacity: 0.4;
   }
 
   nav {
