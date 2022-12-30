@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  background-image: url(assets/crew/background-crew-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+}
+
+#crew {
+  margin-top: 16px;
+  padding-inline: 40px;
+}
+
+#crew h1,
+#crew h2,
+#crew h3,
+#crew p {
+  text-align: center;
+}
+
+#crew h1 {
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 18px;
+  font-family: "Barlow condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+}
+
+#crew h1 span {
+  margin-right: 16px;
+  opacity: 0.2;
+  font-weight: bold;
+}
+
+#crew .crew-profile {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 28px;
+}
+
+#crew .crew-image {
+  margin-inline: auto;
+}
+
+#crew .crew-image img {
+  width: 160px;
+  height: 100%;
+}
+
+#crew .profile-secondary {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+  padding-top: 20px;
+}
+
+#crew .profile-secondary .crew-slider-button {
+  margin-inline: auto;
+}
+
+#crew .profile-secondary .crew-slider-button span {
+  display: inline-block;
+  height: 10px;
+  aspect-ratio: 1;
+  background-color: hsl(0, 0%, 100%);
+  opacity: 0.2;
+  border-radius: 8px;
+  margin-inline: 6px;
+}
+
+#crew .crew-description {
+  margin-block-start: 20px;
+}
+
+#crew .crew-description h2 {
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: hsla(0, 0%, 100%, 0.4);
+}
+
+#crew .crew-description h3 {
+  text-transform: uppercase;
+  margin-block: 8px 20px;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-weight: normal;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+}
+
+#crew .crew-description p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  color: hsla(230, 35%, 100%, 0.6);
+  max-width: 500px;
+  margin-inline: auto;
+}
