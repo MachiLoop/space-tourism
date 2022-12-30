@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER SECTION*/
+header {
+  padding-block-start: 24px;
+  padding-inline: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: none;
+}
+
+/* SECTION MEDIA QUERY */
+@media (min-width: 648px) {
+  header {
+    padding-inline-end: 0px;
+    padding-block: 0px;
+  }
+
+  .harmburger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    padding-inline: 28px 40px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+  }
+
+  nav ul {
+    display: flex;
+    gap: 32px;
+    padding-block: 28px;
+  }
+
+  nav ul li a {
+    color: hsla(0, 0%, 100%, 0.9);
+    padding-block-end: 28px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+  }
+
+  nav ul li a span {
+    display: none;
+  }
+
+  nav ul li a:hover {
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+  }
+}
+
+@media (min-width: 1100px) {
+  header {
+    padding-inline-start: 52px;
+    padding-block-start: 26px;
+    position: relative;
+  }
+
+  header .nav-line {
+    width: calc(100% - 900px);
+    height: 1px;
+    position: absolute;
+    left: 160px;
+    background-color: hsl(0, 0%, 100%);
+    opacity: 0.4;
+  }
+
+  nav {
+    padding-inline: 96px 150px;
+  }
+
+  nav ul {
+    gap: 48px;
+  }
+
+  nav ul li a {
+    letter-spacing: 2.7px;
+  }
+
+  nav ul li a span {
+    display: inline;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+}
