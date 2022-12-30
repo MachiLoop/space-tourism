@@ -10,6 +10,7 @@ fetch("/starter-code/data.json")
 const application = function (data) {
   console.log(data);
   crewProfile(data, 0);
+  slideHandler(data);
 };
 
 const crewProfile = function (data, index) {
@@ -42,4 +43,19 @@ const crewProfile = function (data, index) {
         `<span class="slide-btn" data-index = ${i}></span>`
       );
   }
+};
+
+const resetCrewProfile = function () {
+  document.querySelector(".crew-profile").remove();
+};
+
+const slideHandler = function (data) {
+  crewSection.addEventListener("click", function (e) {
+    console.log(e.target);
+    if (e.target.classList.contains("slide-btn")) {
+      goToIndex = e.target.dataset.index;
+      resetCrewProfile();
+      crewProfile(data, goToIndex);
+    }
+  });
 };
