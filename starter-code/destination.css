@@ -137,3 +137,43 @@ a {
   font-family: "Bellefair", serif;
   text-transform: uppercase;
 }
+
+/* SECTION MEDIA QUERY */
+@media (min-width: 648px) {
+  .container {
+    background-image: url(assets/destination/background-destination-tablet.jpg);
+  }
+
+  #destination {
+    margin-top: 24px;
+  }
+
+  #destination .destination-wrapper {
+    margin-block-start: 48px;
+  }
+
+  #destination h1 {
+    text-align: initial;
+  }
+
+  #destination .destination-image img {
+    width: 240px;
+  }
+
+  #destination .destination-secondary {
+    margin-block-start: 36px;
+  }
+
+  #destination .destination-description p {
+    padding-bottom: 36px;
+    border-bottom: 1px solid hsla(231, 77%, 90%, 0.1);
+    line-height: 26px;
+  }
+
+  #destination .destination-stat {
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    padding-bottom: 40px;
+  }
+}
