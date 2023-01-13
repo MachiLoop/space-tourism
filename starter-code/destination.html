@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="destination.css" />
     <link rel="stylesheet" href="navigation.css" />
+    <script src="nav.js" defer></script>
     <script src="destination.js" defer></script>
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -23,13 +24,13 @@
 
         <div class="nav-line"></div>
 
-        <nav class="primary-nav">
+        <nav class="primary-nav" data-visible="false">
           <ul>
             <li>
               <a href="index.html"><span>00</span>Home</a>
             </li>
             <li>
-              <a href="#"><span>01</span>Destination</a>
+              <a href="#" class="active-page"><span>01</span>Destination</a>
             </li>
             <li>
               <a href="crew.html"><span>02</span>Crew</a>

@@ -23,8 +23,56 @@ header {
   justify-content: space-between;
 }
 
+/* js for mobile navigation */
 nav {
-  display: none;
+  /* display: none; */
+  transform: translateX(100%);
+  position: fixed;
+  inset: 0 0 0 28%;
+  padding-inline: 40px 0px;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(1.5rem);
+  transition: transform 300ms ease-in;
+  z-index: 999;
+}
+
+nav[data-visible="true"] {
+  /* display: block; */
+  transform: translateX(0%);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding-block-start: 120px;
+  gap: 26px;
+}
+
+nav ul li a {
+  padding-block: 6px;
+  display: inline-block;
+  width: 100%;
+  color: hsla(0, 0%, 100%, 0.9);
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+}
+
+nav ul li a span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.harmburger {
+  z-index: 1000;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  border-inline-end: 4px solid hsl(0, 0%, 100%);
 }
 
 /* SECTION MEDIA QUERY */
@@ -40,21 +88,24 @@ nav {
 
   nav {
     display: block;
+    position: initial;
+    inset: initial;
     padding-inline: 28px 40px;
-    background-color: hsla(0, 0%, 100%, 0.1);
+    /* backdrop-filter: initial; */
+    transform: initial;
+    transition: initial;
   }
 
   nav ul {
-    display: flex;
+    flex-direction: row;
     gap: 32px;
     padding-block: 28px;
   }
 
   nav ul li a {
-    color: hsla(0, 0%, 100%, 0.9);
+    padding-block: initial;
+    display: initial;
     padding-block-end: 28px;
-    font-family: "Barlow Condensed", sans-serif;
-    text-transform: uppercase;
   }
 
   nav ul li a span {
@@ -62,6 +113,7 @@ nav {
   }
 
   nav ul li a:hover {
+    border: initial;
     border-bottom: 2px solid hsl(0, 0%, 100%);
   }
 }
@@ -80,6 +132,7 @@ nav {
     left: 160px;
     background-color: hsl(0, 0%, 100%);
     opacity: 0.4;
+    z-index: 1000;
   }
 
   nav {
@@ -96,7 +149,5 @@ nav {
 
   nav ul li a span {
     display: inline;
-    margin-right: 10px;
-    font-weight: bold;
   }
 }
