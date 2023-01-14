@@ -72,6 +72,14 @@ nav ul li a span {
 }
 
 nav ul li a:hover {
+  border-inline-end: 4px solid hsla(0, 0%, 100%, 0.7);
+}
+
+.active-page {
+  border-inline-end: 4px solid hsl(0, 0%, 100%);
+}
+
+.active-page:hover {
   border-inline-end: 4px solid hsl(0, 0%, 100%);
 }
 
@@ -113,6 +121,16 @@ nav ul li a:hover {
   }
 
   nav ul li a:hover {
+    border-inline-end: initial;
+    border-bottom: 2px solid hsla(0, 0%, 100%, 0.7);
+  }
+
+  .active-page {
+    border: initial;
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+  }
+
+  .active-page:hover {
     border: initial;
     border-bottom: 2px solid hsl(0, 0%, 100%);
   }

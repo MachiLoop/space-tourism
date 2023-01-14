@@ -5,7 +5,7 @@ fetch("/starter-code/data.json")
   .then((data) => application(data));
 
 const application = function (data) {
-  console.log(data);
+  // console.log(data);
   destinationInfoHandler(data, 0);
   slideHandler(data);
 };
@@ -37,7 +37,7 @@ const destinationInfoHandler = function (data, index) {
 `;
 
   destinationSection.insertAdjacentHTML("beforeend", destinationInfoTemplate);
-  console.log(document.querySelector(".destination-slider-button"));
+  // console.log(document.querySelector(".destination-slider-button"));
 
   for (let i = 0; i < data.destinations.length; i++) {
     document
@@ -47,6 +47,8 @@ const destinationInfoHandler = function (data, index) {
         `<span class="slide-btn" data-index = ${i}>${data.destinations[i].name}</span>`
       );
   }
+
+  document.querySelectorAll(".slide-btn")[index].classList.add("active-slide");
 };
 
 const resetdestinationInfoHandler = function () {
@@ -56,7 +58,7 @@ const resetdestinationInfoHandler = function () {
 const slideHandler = function (data) {
   destinationSection.addEventListener("click", function (e) {
     e.preventDefault();
-    console.log(e.target);
+    // console.log(e.target);
     if (e.target.classList.contains("slide-btn")) {
       goToIndex = e.target.dataset.index;
       resetdestinationInfoHandler();

@@ -86,7 +86,7 @@ a {
 }
 
 #destination .destination-secondary .destination-slider-button span:hover {
-  border-bottom: 2px solid hsla(0, 0%, 100%, 0.7);
+  border-bottom: 2px solid hsla(0, 0%, 100%, 0.5);
 }
 
 #destination .destination-description {
@@ -138,6 +138,18 @@ a {
   text-transform: uppercase;
 }
 
+#destination .destination-secondary .destination-slider-button .active-slide {
+  border-bottom: 2px solid hsla(0, 0%, 100%, 1);
+  color: hsla(0, 0%, 100%, 1);
+}
+
+#destination
+  .destination-secondary
+  .destination-slider-button
+  .active-slide:hover {
+  border-bottom: 2px solid hsla(0, 0%, 100%, 1);
+  color: hsla(0, 0%, 100%, 1);
+}
 /* SECTION MEDIA QUERY */
 @media (min-width: 648px) {
   .container {
