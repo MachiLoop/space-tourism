@@ -1,5 +1,5 @@
 const navigationEl = document.querySelector("nav");
-const navBtn = document.querySelector(".harmburger");
+const navBtn = document.querySelector(".hamburger");
 
 navBtn.addEventListener("click", function () {
   let visibility = navigationEl.getAttribute("data-visible");

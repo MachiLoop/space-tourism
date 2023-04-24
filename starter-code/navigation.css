@@ -63,7 +63,7 @@ nav ul li a span {
   font-weight: bold;
 }
 
-.harmburger {
+.hamburger {
   z-index: 1000;
   position: absolute;
   top: 40px;
@@ -90,7 +90,7 @@ nav ul li a:hover {
     padding-block: 0px;
   }
 
-  .harmburger {
+  .hamburger {
     display: none;
   }
 

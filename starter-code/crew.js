@@ -1,5 +1,5 @@
 const crewSection = document.getElementById("crew");
-console.log(crewSection);
+// console.log(crewSection);
 
 let file;
 
@@ -8,7 +8,7 @@ fetch("/starter-code/data.json")
   .then((data) => application(data));
 
 const application = function (data) {
-  console.log(data);
+  // console.log(data);
   crewProfile(data, 0);
   slideHandler(data);
 };
@@ -33,7 +33,7 @@ const crewProfile = function (data, index) {
 `;
 
   crewSection.insertAdjacentHTML("beforeend", crewProfileTemplate);
-  console.log(document.querySelector(".crew-slider-button"));
+  // console.log(document.querySelector(".crew-slider-button"));
 
   for (let i = 0; i < data.crew.length; i++) {
     document
@@ -43,6 +43,8 @@ const crewProfile = function (data, index) {
         `<span class="slide-btn" data-index = ${i}></span>`
       );
   }
+
+  document.querySelectorAll(".slide-btn")[index].classList.add("active-slide");
 };
 
 const resetCrewProfile = function () {
@@ -51,7 +53,7 @@ const resetCrewProfile = function () {
 
 const slideHandler = function (data) {
   crewSection.addEventListener("click", function (e) {
-    console.log(e.target);
+    // console.log(e.target);
     if (e.target.classList.contains("slide-btn")) {
       goToIndex = e.target.dataset.index;
       resetCrewProfile();

@@ -52,6 +52,8 @@ const techSpecHandler = function (data, index) {
         `<span class="slide-btn" data-index = ${i}>${i + 1}</span>`
       );
   }
+
+  document.querySelectorAll(".slide-btn")[index].classList.add("active-slide");
 };
 
 const resetTechSpecHandler = function () {

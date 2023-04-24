@@ -82,6 +82,11 @@ a {
   border-radius: 50%;
   border: 1px solid hsla(0, 0%, 100%, 0.2);
   margin-inline: 8px;
+  cursor: pointer;
+}
+
+#technology .specs-secondary .technology-slider-button span:hover {
+  border: 1px solid hsl(0, 0%, 100%);
 }
 
 #technology .technology-description {
@@ -114,6 +119,16 @@ a {
   width: 90%;
   max-width: 500px;
   margin-inline: auto;
+}
+
+#technology .specs-secondary .technology-slider-button .active-slide {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(230, 35%, 7%);
+}
+
+#technology .specs-secondary .technology-slider-button .active-slide:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(230, 35%, 7%);
 }
 
 /* SECTION MEDIA QUERY */
